@@ -15,21 +15,13 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class SeatPage extends StatelessWidget{
-
+class SeatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('seats'),
-      ),
-      body: Column(
-        children: [
-          SeatSelectBox(),
-          SeatBottom(),
-        ],
-      ),
+      appBar: AppBar(title: Text('Seats')),
+      backgroundColor: Colors.grey[200],
+      body: Column(children: [SeatSelectBox(), SeatBottom()]),
     );
   }
-
 }
